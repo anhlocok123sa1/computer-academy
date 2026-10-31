@@ -1,0 +1,15 @@
+1
+00:00:00,000 --> 00:00:07,000
+Vũ khí tối thượng dành cho Gamer và Designer chính là Card đồ họa VGA!
+
+2
+00:00:07,000 --> 00:00:28,000
+Phân biệt nhanh: iGPU được đúc sẵn trong CPU, dùng chung RAM hệ thống cho tác vụ nhẹ. Còn Dedicated GPU Card rời sở hữu chip xử lý riêng, bộ nhớ VRAM GDDR6 tốc độ cao chuyên trị Game 4K, Render 3D và AI!
+
+3
+00:00:28,000 --> 00:00:48,000
+Đừng bỏ qua 2 công nghệ đỉnh cao: Ray Tracing dò vết tia sáng tạo hiệu ứng bóng đổ chân thực; và DLSS FSR dùng AI tăng vọt tốc độ khung hình FPS!
+
+4
+00:00:48,000 --> 00:01:00,000
+Mẹo lắp ráp: Luôn đo kỹ chiều dài card đồ họa xem có bị vướng vỏ case và bộ nguồn PSU có đủ công suất gánh card không nhé!

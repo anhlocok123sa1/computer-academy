@@ -1,0 +1,15 @@
+1
+00:00:00,000 --> 00:00:08,000
+Khi CPU quá nóng, máy tính sẽ bị Thermal Throttling - tự động tụt xung nhịp gây lag giật để bảo vệ linh kiện không bị cháy!
+
+2
+00:00:08,000 --> 00:00:28,000
+Để giải nhiệt, ta có 3 lựa chọn: Tản Stock đi kèm CPU cho tác vụ nhẹ; Tản Khí dạng tháp bền bỉ và giá rẻ; và Tản Nước AIO cho hiệu năng làm mát đỉnh cao cùng thẩm mỹ rực rỡ!
+
+3
+00:00:28,000 --> 00:00:48,000
+Nhớ tra keo tản nhiệt bằng một chấm nhỏ kích thước hạt đậu ở chính giữa bề mặt CPU trước khi úp tản nhé! Dùng quạt chuẩn 4-pin PWM để Mainboard tự điều tốc quạt.
+
+4
+00:00:48,000 --> 00:01:00,000
+CẢNH BÁO MẠNH: Cổng ARGB 5V 3 chân và RGB 12V 4 chân hoàn toàn khác nhau! Cắm nhầm chân ARGB 5V vào cọc 12V sẽ làm CHÁY DẢI LED ngay lập tức!

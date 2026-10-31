@@ -1,0 +1,15 @@
+1
+00:00:00,000 --> 00:00:08,000
+Bạn có biết tại sao nâng cấp RAM lại giúp máy hết giật lag khi mở hàng chục ứng dụng cùng lúc?
+
+2
+00:00:08,000 --> 00:00:25,000
+RAM là bộ nhớ tạm thời có tính chất bất định - khi ngắt điện, toàn bộ dữ liệu trên RAM sẽ bị xóa sạch. 3 thông số vàng của RAM gồm: Dung lượng, Tốc độ Bus và Độ trễ CAS. So với DDR4, chuẩn DDR5 mới cho băng thông gấp đôi và quản lý điện áp tốt hơn.
+
+3
+00:00:25,000 --> 00:00:50,000
+Quy tắc cắm RAM chuẩn KTV: Hãy cắm 2 thanh RAM vào khe 2 và khe 4 để kích hoạt công nghệ Dual Channel, nhân đôi đường truyền dữ liệu đến CPU!
+
+4
+00:00:50,000 --> 00:01:00,000
+Sau khi cắm xong, bắt buộc truy cập BIOS bật profile Intel XMP hoặc AMD EXPO để RAM chạy đúng tốc độ tối đa nhé!

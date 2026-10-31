@@ -1,0 +1,17 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:07.000
+Nhỏ bé nhưng cực kỳ quyền năng, CPU chính là bộ não thực hiện mọi phép tính toán của hệ thống PC.
+
+2
+00:00:07.000 --> 00:00:25.000
+Để đánh giá CPU, chú ý các thông số: Số nhân & Số luồng giúp xử lý đa nhiệm; Kiến trúc lai phân chia nhân hiệu năng cao P-Core và nhân tiết kiệm điện E-Core; Xung nhịp GHz thể hiện tốc độ tính toán; và bộ nhớ đệm Cache L3.
+
+3
+00:00:25.000 --> 00:00:50.000
+Mẹo đọc tên CPU: Với Intel, hậu tố K là cho phép ép xung, hậu tố F là cắt giảm đồ họa tích hợp. Với AMD, hậu tố X3D sở hữu bộ nhớ đệm 3D V-Cache chuyên dụng cho Gaming đỉnh cao!
+
+4
+00:00:50.000 --> 00:01:00.000
+Luôn kiểm tra chỉ số tỏa nhiệt TDP của CPU để chọn bộ tản nhiệt đáp ứng đủ công suất làm mát nhé!

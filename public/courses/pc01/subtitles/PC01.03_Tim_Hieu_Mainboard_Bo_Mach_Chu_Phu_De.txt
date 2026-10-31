@@ -1,0 +1,15 @@
+1
+00:00:00,000 --> 00:00:08,000
+Bo mạch chủ được ví như hệ thần kinh và bộ khung xương, kết nối mọi linh kiện thành một cơ thể thống nhất và phân phối điện năng toàn hệ thống.
+
+2
+00:00:08,000 --> 00:00:30,000
+Các thành phần cốt lõi gồm: Socket CPU; cụm mạch VRM biến đổi điện áp nuôi CPU; Khe RAM DIMM; khe PCIe x16 gắn card đồ họa; và khe M.2 NVMe gắn SSD tốc độ cao.
+
+3
+00:00:30,000 --> 00:00:48,000
+Lưu ý an toàn: Với Socket chuẩn LGA, các chân kim nhọn nằm trực tiếp trên Mainboard nên tuyệt đối không chạm tay vào làm cong chân! Về Chipset: dòng H dành cho văn phòng, dòng B cho Gaming quốc dân, và dòng Z cao cấp cho phép ép xung.
+
+4
+00:00:48,000 --> 00:01:00,000
+Đừng quên: Khi cắm 2 thanh RAM, hãy cắm vào khe 2 và khe 4 để kích hoạt Kênh đôi Dual Channel tối ưu nhất nhé!

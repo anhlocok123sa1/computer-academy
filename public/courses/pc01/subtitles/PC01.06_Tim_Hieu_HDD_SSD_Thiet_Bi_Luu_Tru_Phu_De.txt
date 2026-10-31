@@ -1,0 +1,15 @@
+1
+00:00:00,000 --> 00:00:07,000
+Bạn muốn máy tính khởi động trong 5 giây hay phải ngồi chờ dài cổ cả phút? Bí mật nằm ở thiết bị lưu trữ!
+
+2
+00:00:07,000 --> 00:00:28,000
+HDD dùng đĩa từ quay cơ học, tốc độ chậm và dễ hỏng khi va đập. Ngược lại, SSD dùng chip nhớ Flash NAND hoàn toàn êm ái, chống sốc và siêu nhanh! SSD M.2 NVMe chuẩn PCIe Gen 4 có thể đạt tốc độ đọc xé gió trên 7000 MB/s!
+
+3
+00:00:28,000 --> 00:00:50,000
+Giải pháp tối ưu nhất cho ngân sách là Hybrid Storage: Dùng 1 ổ SSD NVMe dung lượng vừa phải để cài Win và ứng dụng, kết hợp 1 ổ HDD dung lượng lớn để chứa tài liệu phim ảnh!
+
+4
+00:00:50,000 --> 00:01:00,000
+Khi chọn SSD, hãy chú ý chỉ số TBW - thể hiện tổng dung lượng ghi tối đa. TBW càng cao thì ổ cứng càng bền bỉ theo thời gian!

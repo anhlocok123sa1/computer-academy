@@ -1,0 +1,15 @@
+1
+00:00:00,000 --> 00:00:07,000
+Thùng máy PC không đơn thuần là chiếc hộp đựng linh kiện, mà là lớp giáp bảo vệ, chống nhiễu điện từ EMI và định hướng luồng gió làm mát!
+
+2
+00:00:07,000 --> 00:00:25,000
+Bên trong bộ khung case tiêu chuẩn gồm 6 phân khu: Khay gá Mainboard có ốc đệm Stand-offs chống đoản mạch; hộc nguồn PSU Shroud giấu dây; khay ổ cứng Drive Bays; các khe đi dây cáp và khe mở rộng PCIe.
+
+3
+00:00:25,000 --> 00:00:50,000
+Về tản nhiệt, hãy nhớ Quy tắc vàng Airflow: Quạt mặt trước và mặt đáy hút gió mát vào; Quạt mặt sau và mặt đỉnh đẩy gió nóng ra.
+
+4
+00:00:50,000 --> 00:01:00,000
+Ưu tiên thiết lập Áp suất dương để gió thừa thoát qua kẽ hở, giúp bụi bẩn không thể chui vào bên trong nhé!

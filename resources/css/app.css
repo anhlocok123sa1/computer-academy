@@ -1,0 +1,864 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* -------------------------------------------------------------
+   SMOOTH COLOR TRANSITIONS
+---------------------------------------------------------------- */
+html {
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+body {
+    min-height: 100vh;
+}
+
+/* -------------------------------------------------------------
+   LIGHT MODE SYSTEM OVERRIDES
+   Activates whenever the root <html> does NOT have .dark class
+---------------------------------------------------------------- */
+html:not(.dark) {
+    color-scheme: light;
+}
+
+html:not(.dark) body {
+    background-color: #f8fafc;
+    color: #0f172a;
+}
+
+/* 1. Base Dark Background Overrides */
+html:not(.dark) .bg-\[\#060913\],
+html:not(.dark) .bg-\[\#050811\],
+html:not(.dark) .bg-\[\#04060d\] {
+    background-color: #f8fafc !important;
+}
+
+html:not(.dark) .bg-\[\#0a0f1d\] {
+    background-color: #ffffff !important;
+}
+
+html:not(.dark) header.bg-\[\#060913\]\/85,
+html:not(.dark) .bg-\[\#060913\]\/85 {
+    background-color: rgba(255, 255, 255, 0.95) !important;
+    border-color: #e2e8f0 !important;
+}
+
+html:not(.dark) footer.bg-\[\#04060d\],
+html:not(.dark) footer {
+    background-color: #ffffff !important;
+    border-color: #e2e8f0 !important;
+}
+
+/* 2. Cards, Containers, Tables & Panels */
+html:not(.dark) .bg-slate-900,
+html:not(.dark) .bg-slate-900\/90,
+html:not(.dark) .bg-slate-900\/80,
+html:not(.dark) .bg-slate-900\/75,
+html:not(.dark) .bg-slate-900\/70,
+html:not(.dark) .bg-slate-900\/60,
+html:not(.dark) .bg-slate-900\/50,
+html:not(.dark) .bg-slate-900\/40,
+html:not(.dark) .bg-slate-900\/30,
+html:not(.dark) .bg-slate-950,
+html:not(.dark) .bg-slate-950\/70,
+html:not(.dark) .bg-slate-950\/60,
+html:not(.dark) .bg-slate-950\/40 {
+    background-color: #ffffff !important;
+    border-color: #e2e8f0 !important;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.05), 0 1px 2px -1px rgb(0 0 0 / 0.05);
+}
+
+/* Sub-containers & Secondary Items */
+html:not(.dark) .bg-slate-800,
+html:not(.dark) .bg-slate-800\/80,
+html:not(.dark) .bg-slate-800\/60,
+html:not(.dark) .bg-slate-800\/50,
+html:not(.dark) .bg-slate-800\/30 {
+    background-color: #f1f5f9 !important;
+    border-color: #e2e8f0 !important;
+}
+
+html:not(.dark) .hover\:bg-slate-800:hover,
+html:not(.dark) .hover\:bg-slate-800\/80:hover,
+html:not(.dark) .hover\:bg-slate-800\/70:hover,
+html:not(.dark) .hover\:bg-slate-800\/50:hover,
+html:not(.dark) .hover\:bg-slate-800\/30:hover,
+html:not(.dark) .hover\:bg-slate-700:hover {
+    background-color: #e2e8f0 !important;
+}
+
+/* Table Row Hover in Light Mode */
+html:not(.dark) tr.hover\:bg-slate-800\/30:hover {
+    background-color: #f8fafc !important;
+}
+
+/* 3. Borders & Dividers */
+html:not(.dark) .border-slate-800,
+html:not(.dark) .border-slate-800\/90,
+html:not(.dark) .border-slate-800\/80,
+html:not(.dark) .border-slate-800\/70,
+html:not(.dark) .border-slate-800\/60,
+html:not(.dark) .border-slate-800\/40,
+html:not(.dark) .border-slate-700,
+html:not(.dark) .border-slate-700\/80,
+html:not(.dark) .divide-slate-800 > :not([hidden]) ~ :not([hidden]),
+html:not(.dark) .divide-slate-800\/80 > :not([hidden]) ~ :not([hidden]),
+html:not(.dark) .divide-slate-800\/70 > :not([hidden]) ~ :not([hidden]),
+html:not(.dark) .divide-slate-800\/40 > :not([hidden]) ~ :not([hidden]) {
+    border-color: #e2e8f0 !important;
+}
+
+/* 4. Text Colors - High Contrast for Light Backgrounds */
+html:not(.dark) .text-white {
+    color: #0f172a !important;
+}
+
+html:not(.dark) .text-slate-100,
+html:not(.dark) .text-slate-200 {
+    color: #1e293b !important;
+}
+
+html:not(.dark) .text-slate-300 {
+    color: #334155 !important;
+}
+
+html:not(.dark) .text-slate-400 {
+    color: #475569 !important;
+}
+
+html:not(.dark) .text-slate-500 {
+    color: #64748b !important;
+}
+
+html:not(.dark) .hover\:text-white:hover {
+    color: #0f172a !important;
+}
+
+/* Accent Colors tuned for readability on Light backgrounds */
+html:not(.dark) .text-blue-400 {
+    color: #2563eb !important;
+}
+
+html:not(.dark) .text-emerald-400 {
+    color: #059669 !important;
+}
+
+html:not(.dark) .text-emerald-300 {
+    color: #047857 !important;
+}
+
+html:not(.dark) .text-amber-400 {
+    color: #d97706 !important;
+}
+
+html:not(.dark) .text-amber-300 {
+    color: #b45309 !important;
+}
+
+html:not(.dark) .text-rose-400 {
+    color: #e11d48 !important;
+}
+
+html:not(.dark) .text-rose-300 {
+    color: #be123c !important;
+}
+
+html:not(.dark) .text-violet-400 {
+    color: #7c3aed !important;
+}
+
+html:not(.dark) .text-indigo-400,
+html:not(.dark) .text-indigo-300 {
+    color: #4338ca !important;
+}
+
+html:not(.dark) .hover\:text-blue-400:hover,
+html:not(.dark) .hover\:text-blue-300:hover {
+    color: #1d4ed8 !important;
+}
+
+/* 5. PRIMARY BUTTONS & CTAs (TEXT MUST BE WHITE ONLY FOR ACTUAL BUTTONS) */
+html:not(.dark) button.bg-blue-600,
+html:not(.dark) a.bg-blue-600,
+html:not(.dark) button.bg-blue-500,
+html:not(.dark) a.bg-blue-500,
+html:not(.dark) button.bg-emerald-600,
+html:not(.dark) a.bg-emerald-600,
+html:not(.dark) button.bg-rose-600,
+html:not(.dark) a.bg-rose-600,
+html:not(.dark) button.bg-indigo-600,
+html:not(.dark) a.bg-indigo-600,
+html:not(.dark) button.bg-violet-600,
+html:not(.dark) a.bg-violet-600,
+html:not(.dark) button[class*="bg-gradient-to-r"],
+html:not(.dark) a[class*="bg-gradient-to-r"],
+html:not(.dark) button[class*="bg-gradient-to-br"],
+html:not(.dark) a[class*="bg-gradient-to-br"] {
+    color: #ffffff !important;
+}
+
+html:not(.dark) button.bg-blue-600 *,
+html:not(.dark) a.bg-blue-600 *,
+html:not(.dark) button.bg-emerald-600 *,
+html:not(.dark) a.bg-emerald-600 *,
+html:not(.dark) button.bg-rose-600 *,
+html:not(.dark) a.bg-rose-600 *,
+html:not(.dark) button.bg-violet-600 *,
+html:not(.dark) a.bg-violet-600 *,
+html:not(.dark) button[class*="bg-gradient-to-r"] *,
+html:not(.dark) a[class*="bg-gradient-to-r"] * {
+    color: #ffffff !important;
+}
+
+/* Inactive tabs & secondary buttons in Light Mode */
+html:not(.dark) button.bg-slate-900,
+html:not(.dark) a.bg-slate-900 {
+    background-color: #ffffff !important;
+    border: 1px solid #cbd5e1 !important;
+    color: #334155 !important;
+}
+
+html:not(.dark) button.bg-slate-900:hover,
+html:not(.dark) a.bg-slate-900:hover {
+    background-color: #f1f5f9 !important;
+    color: #0f172a !important;
+}
+
+/* Active tab button highlight */
+html:not(.dark) button.bg-blue-600,
+html:not(.dark) a.bg-blue-600 {
+    border-color: #2563eb !important;
+}
+
+/* Interactive card hover button effect */
+html:not(.dark) .group:hover .group-hover\:bg-blue-600,
+html:not(.dark) .group:hover .group-hover\:bg-blue-600 * {
+    background-color: #2563eb !important;
+    color: #ffffff !important;
+}
+
+/* 6. Soft Badge Tints */
+html:not(.dark) .bg-blue-500\/10,
+html:not(.dark) .bg-blue-500\/15,
+html:not(.dark) .bg-blue-600\/15 {
+    background-color: #eff6ff !important;
+    border-color: #bfdbfe !important;
+}
+
+html:not(.dark) .bg-emerald-500\/10,
+html:not(.dark) .bg-emerald-500\/15,
+html:not(.dark) .bg-emerald-500\/20,
+html:not(.dark) .bg-emerald-600\/20 {
+    background-color: #ecfdf5 !important;
+    border-color: #a7f3d0 !important;
+}
+
+html:not(.dark) .bg-amber-500\/10,
+html:not(.dark) .bg-amber-500\/15,
+html:not(.dark) .bg-amber-500\/20 {
+    background-color: #fffbeb !important;
+    border-color: #fde68a !important;
+}
+
+html:not(.dark) .bg-rose-500\/10,
+html:not(.dark) .bg-rose-500\/15,
+html:not(.dark) .bg-rose-500\/20 {
+    background-color: #fff1f2 !important;
+    border-color: #fecdd3 !important;
+}
+
+html:not(.dark) .bg-violet-500\/10,
+html:not(.dark) .bg-violet-500\/20 {
+    background-color: #f5f3ff !important;
+    border-color: #ddd6fe !important;
+}
+
+html:not(.dark) .bg-indigo-600\/20,
+html:not(.dark) .bg-indigo-600\/30 {
+    background-color: #e0e7ff !important;
+    border-color: #c7d2fe !important;
+}
+
+/* 7. Special Case: Gradient Text MUST retain transparent clip */
+html:not(.dark) .text-transparent,
+html:not(.dark) .bg-clip-text {
+    color: transparent !important;
+}
+
+/* Brand heading text in light mode */
+html:not(.dark) .from-white.via-slate-100.to-blue-400 {
+    --tw-gradient-from: #0f172a var(--tw-gradient-from-position) !important;
+    --tw-gradient-to: #2563eb var(--tw-gradient-to-position) !important;
+    --tw-gradient-stops: var(--tw-gradient-from), #334155 var(--tw-gradient-via-position), var(--tw-gradient-to) !important;
+}
+
+html:not(.dark) .from-blue-400.via-cyan-300.to-indigo-400,
+html:not(.dark) .from-blue-400.to-cyan-300 {
+    --tw-gradient-from: #2563eb var(--tw-gradient-from-position) !important;
+    --tw-gradient-to: #4f46e5 var(--tw-gradient-to-position) !important;
+    --tw-gradient-stops: var(--tw-gradient-from), #0891b2 var(--tw-gradient-via-position), var(--tw-gradient-to) !important;
+}
+
+/* 8. Form Inputs, Selects & Dropdowns */
+html:not(.dark) input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):not([type="button"]),
+html:not(.dark) textarea,
+html:not(.dark) select {
+    background-color: #ffffff !important;
+    border: 1px solid #cbd5e1 !important;
+    color: #0f172a !important;
+}
+
+html:not(.dark) select option {
+    background-color: #ffffff !important;
+    color: #0f172a !important;
+}
+
+html:not(.dark) input[type="checkbox"],
+html:not(.dark) input[type="radio"] {
+    background-color: #ffffff !important;
+    border-color: #94a3b8 !important;
+}
+
+html:not(.dark) input::placeholder,
+html:not(.dark) textarea::placeholder {
+    color: #94a3b8 !important;
+}
+
+html:not(.dark) input:focus,
+html:not(.dark) textarea:focus,
+html:not(.dark) select:focus {
+    border-color: #3b82f6 !important;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15) !important;
+}
+
+/* 9. Header & Banner Gradients in Light Mode */
+html:not(.dark) .from-slate-900.via-\[\#0a1022\].to-\[\#060913\],
+html:not(.dark) .from-slate-900.via-\[\#0a1229\].to-\[\#060913\],
+html:not(.dark) .from-slate-900.via-\[\#0a1020\].to-\[\#060913\],
+html:not(.dark) .from-slate-900.via-\[\#0e162e\].to-slate-900 {
+    --tw-gradient-from: #f8fafc var(--tw-gradient-from-position) !important;
+    --tw-gradient-to: #ffffff var(--tw-gradient-to-position) !important;
+    --tw-gradient-stops: var(--tw-gradient-from), #f1f5f9 var(--tw-gradient-via-position), var(--tw-gradient-to) !important;
+    background-image: linear-gradient(to right, #f8fafc, #f1f5f9, #f8fafc) !important;
+}
+
+/* 10. Video Player in Watch Room (Must remain dark) */
+html:not(.dark) .bg-black {
+    background-color: #000000 !important;
+}
+
+html:not(.dark) .bg-black * {
+    color: #ffffff !important;
+}
+
+/* 11. Prose / Doc Reader in Watch Room */
+.lesson-content-box,
+.prose-invert {
+    font-size: 1.025rem;
+    line-height: 1.85 !important;
+    letter-spacing: 0.01em;
+}
+
+.lesson-content-box p,
+.prose-invert p {
+    margin-top: 0 !important;
+    margin-bottom: 1.5rem !important;
+    line-height: 1.85 !important;
+}
+
+.lesson-content-box h2,
+.prose-invert h2 {
+    margin-top: 2.5rem !important;
+    margin-bottom: 1.25rem !important;
+    line-height: 1.4 !important;
+}
+
+.lesson-content-box h3,
+.prose-invert h3 {
+    margin-top: 2.25rem !important;
+    margin-bottom: 1rem !important;
+    line-height: 1.45 !important;
+}
+
+.lesson-content-box h4,
+.prose-invert h4 {
+    margin-top: 1.75rem !important;
+    margin-bottom: 0.875rem !important;
+    line-height: 1.5 !important;
+}
+
+.lesson-content-box ul,
+.prose-invert ul {
+    margin-top: 0.75rem !important;
+    margin-bottom: 1.5rem !important;
+    padding-left: 1.5rem !important;
+}
+
+.lesson-content-box li,
+.prose-invert li {
+    margin-bottom: 0.75rem !important;
+    line-height: 1.8 !important;
+}
+
+.lesson-content-box figure,
+.prose-invert figure {
+    margin-top: 2rem !important;
+    margin-bottom: 2rem !important;
+}
+
+.lesson-content-box table,
+.prose-invert table {
+    margin-top: 1.5rem !important;
+    margin-bottom: 2rem !important;
+}
+
+.lesson-content-box td,
+.lesson-content-box th,
+.prose-invert td,
+.prose-invert th {
+    padding: 0.875rem 1.125rem !important;
+    line-height: 1.65 !important;
+}
+
+/* Dark Mode Typography Polish */
+.dark .lesson-content-box,
+.dark .prose-invert {
+    background-color: #0a0f1d !important;
+    color: #e2e8f0 !important;
+}
+
+.dark .lesson-content-box p,
+.dark .prose-invert p {
+    color: #cbd5e1 !important;
+}
+
+/* Light Mode Overrides for Lesson Reader */
+html:not(.dark) .lesson-content-box,
+html:not(.dark) .prose-invert {
+    background-color: #ffffff !important;
+    border-color: #e2e8f0 !important;
+    color: #1e293b !important;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05) !important;
+}
+
+html:not(.dark) .lesson-content-box p,
+html:not(.dark) .prose-invert p,
+html:not(.dark) .lesson-content-box li,
+html:not(.dark) .prose-invert li {
+    color: #334155 !important;
+}
+
+html:not(.dark) .lesson-content-box h1,
+html:not(.dark) .prose-invert h1,
+html:not(.dark) .lesson-content-box h2,
+html:not(.dark) .prose-invert h2,
+html:not(.dark) .lesson-content-box h3,
+html:not(.dark) .prose-invert h3,
+html:not(.dark) .lesson-content-box h4,
+html:not(.dark) .prose-invert h4,
+html:not(.dark) .lesson-content-box strong,
+html:not(.dark) .prose-invert strong {
+    color: #0f172a !important;
+}
+
+html:not(.dark) .lesson-content-box code,
+html:not(.dark) .prose-invert code {
+    background-color: #f1f5f9 !important;
+    color: #0284c7 !important;
+    border: 1px solid #e2e8f0 !important;
+}
+
+html:not(.dark) .lesson-content-box pre,
+html:not(.dark) .prose-invert pre {
+    background-color: #0f172a !important;
+    color: #f8fafc !important;
+}
+
+html:not(.dark) .lesson-content-box figure,
+html:not(.dark) .prose-invert figure {
+    background-color: #f8fafc !important;
+    border-color: #e2e8f0 !important;
+}
+
+html:not(.dark) .lesson-content-box figcaption,
+html:not(.dark) .prose-invert figcaption {
+    color: #64748b !important;
+}
+
+html:not(.dark) .lesson-content-box table,
+html:not(.dark) .prose-invert table {
+    background-color: #ffffff !important;
+    border-color: #e2e8f0 !important;
+}
+
+html:not(.dark) .lesson-content-box thead,
+html:not(.dark) .prose-invert thead {
+    background-color: #f8fafc !important;
+}
+
+html:not(.dark) .lesson-content-box th,
+html:not(.dark) .prose-invert th {
+    background-color: #f8fafc !important;
+    color: #0f172a !important;
+    border-color: #e2e8f0 !important;
+}
+
+html:not(.dark) .lesson-content-box td,
+html:not(.dark) .prose-invert td {
+    color: #334155 !important;
+    border-color: #f1f5f9 !important;
+}
+
+html:not(.dark) .lesson-content-box tr:hover,
+html:not(.dark) .prose-invert tr:hover {
+    background-color: #f8fafc !important;
+}
+
+/* Callout boxes in light mode */
+html:not(.dark) .lesson-content-box .bg-blue-950\/30 {
+    background-color: #eff6ff !important;
+    border-color: #bfdbfe !important;
+    color: #1e40af !important;
+}
+
+html:not(.dark) .lesson-content-box .bg-amber-950\/30 {
+    background-color: #fffbeb !important;
+    border-color: #fde68a !important;
+    color: #92400e !important;
+}
+
+html:not(.dark) .lesson-content-box .bg-emerald-950\/30 {
+    background-color: #ecfdf5 !important;
+    border-color: #a7f3d0 !important;
+    color: #065f46 !important;
+}
+
+/* 12. Attachment Card (Tài liệu & Tệp tin đính kèm bài học) */
+.attachment-card {
+    background: linear-gradient(to right, rgba(6, 78, 59, 0.25), rgba(15, 23, 42, 0.75)) !important;
+    border-color: rgba(16, 185, 129, 0.3) !important;
+}
+
+.attachment-icon-wrapper {
+    background-color: rgba(16, 185, 129, 0.15) !important;
+    color: #34d399 !important;
+    border: 1px solid rgba(16, 185, 129, 0.3) !important;
+}
+
+.attachment-title {
+    color: #ffffff !important;
+}
+
+.attachment-path {
+    color: #94a3b8 !important;
+}
+
+/* Light mode for Attachment Card */
+html:not(.dark) .attachment-card {
+    background: linear-gradient(to right, #ecfdf5, #f0fdf4) !important;
+    border-color: #a7f3d0 !important;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05), 0 1px 2px -1px rgba(0, 0, 0, 0.05) !important;
+}
+
+html:not(.dark) .attachment-icon-wrapper {
+    background-color: #d1fae5 !important;
+    color: #059669 !important;
+    border-color: #6ee7b7 !important;
+}
+
+html:not(.dark) .attachment-title {
+    color: #065f46 !important;
+}
+
+html:not(.dark) .attachment-path {
+    color: #047857 !important;
+}
+
+html:not(.dark) .attachment-card a {
+    color: #ffffff !important;
+}
+
+/* 13. Modals & Popups Backdrop */
+html:not(.dark) .bg-black\/75,
+html:not(.dark) .bg-black\/70,
+html:not(.dark) .bg-black\/50 {
+    background-color: rgba(15, 23, 42, 0.6) !important;
+}
+
+/* =========================================================================
+   14. DEDICATED EXERCISE SECTION (BÀI TẬP & CÂU HỎI CỦNG CỐ)
+   ========================================================================= */
+
+/* --- DARK MODE (Default) --- */
+.exercise-header-card {
+    background: linear-gradient(135deg, rgba(30, 58, 138, 0.25) 0%, #0a0f1d 100%) !important;
+    border: 1px solid rgba(59, 130, 246, 0.35) !important;
+    box-shadow: 0 4px 12px -2px rgba(0, 0, 0, 0.4) !important;
+}
+
+.exercise-header-title {
+    color: #ffffff !important;
+}
+
+.exercise-header-desc {
+    color: #94a3b8 !important;
+}
+
+.exercise-badge {
+    background-color: rgba(59, 130, 246, 0.2) !important;
+    color: #60a5fa !important;
+    border: 1px solid rgba(59, 130, 246, 0.3) !important;
+}
+
+.exercise-stat-score {
+    color: #ffffff !important;
+}
+
+.exercise-stat-sub {
+    color: #94a3b8 !important;
+}
+
+.exercise-card {
+    background-color: #0a0f1d !important;
+    border: 1px solid #1e293b !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) !important;
+}
+
+.exercise-q-number {
+    background-color: rgba(59, 130, 246, 0.2) !important;
+    color: #60a5fa !important;
+    border: 1px solid rgba(59, 130, 246, 0.3) !important;
+}
+
+.exercise-q-title {
+    color: #ffffff !important;
+}
+
+/* Quiz Option Buttons (Dark Mode) */
+.quiz-opt-unanswered {
+    background-color: #060a15 !important;
+    border-color: #1e293b !important;
+    color: #e2e8f0 !important;
+}
+
+.quiz-opt-unanswered:hover {
+    background-color: #0f172a !important;
+    border-color: #334155 !important;
+    color: #ffffff !important;
+}
+
+.badge-unanswered {
+    background-color: #1e293b !important;
+    color: #94a3b8 !important;
+}
+
+.quiz-opt-correct {
+    background-color: rgba(6, 78, 59, 0.35) !important;
+    border-color: rgba(16, 185, 129, 0.6) !important;
+    color: #6ee7b7 !important;
+}
+
+.badge-correct {
+    background-color: #10b981 !important;
+    color: #ffffff !important;
+}
+
+.quiz-opt-wrong {
+    background-color: rgba(136, 19, 55, 0.35) !important;
+    border-color: rgba(244, 63, 94, 0.6) !important;
+    color: #fda4af !important;
+}
+
+.badge-wrong {
+    background-color: #f43f5e !important;
+    color: #ffffff !important;
+}
+
+.quiz-opt-dimmed {
+    background-color: #060a15 !important;
+    border-color: #1e293b !important;
+    color: #64748b !important;
+    opacity: 0.55 !important;
+}
+
+.badge-dimmed {
+    background-color: #0f172a !important;
+    color: #475569 !important;
+}
+
+/* Feedback Boxes (Dark Mode) */
+.exercise-feedback-correct {
+    background-color: rgba(6, 78, 59, 0.3) !important;
+    border-color: rgba(16, 185, 129, 0.4) !important;
+    color: #6ee7b7 !important;
+}
+
+.exercise-feedback-incorrect {
+    background-color: rgba(120, 53, 15, 0.3) !important;
+    border-color: rgba(245, 158, 11, 0.4) !important;
+    color: #fde68a !important;
+}
+
+/* Practical (Dark Mode) */
+.exercise-practical-badge {
+    background-color: rgba(16, 185, 129, 0.2) !important;
+    border: 1px solid rgba(16, 185, 129, 0.3) !important;
+    color: #34d399 !important;
+}
+
+.exercise-practical-title {
+    color: #ffffff !important;
+}
+
+.exercise-practical-desc {
+    color: #cbd5e1 !important;
+}
+
+.exercise-checklist-box {
+    background-color: #060a15 !important;
+    border: 1px solid #1e293b !important;
+    color: #cbd5e1 !important;
+}
+
+.exercise-solution-box {
+    background-color: rgba(6, 78, 59, 0.25) !important;
+    border: 1px solid rgba(16, 185, 129, 0.3) !important;
+    color: #a7f3d0 !important;
+}
+
+
+/* --- LIGHT MODE OVERRIDES --- */
+html:not(.dark) .exercise-header-card {
+    background: linear-gradient(135deg, #eff6ff 0%, #f8fafc 100%) !important;
+    border-color: #bfdbfe !important;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05) !important;
+}
+
+html:not(.dark) .exercise-header-title {
+    color: #1e3a8a !important;
+}
+
+html:not(.dark) .exercise-header-desc {
+    color: #475569 !important;
+}
+
+html:not(.dark) .exercise-badge {
+    background-color: #dbeafe !important;
+    color: #1d4ed8 !important;
+    border-color: #bfdbfe !important;
+}
+
+html:not(.dark) .exercise-stat-score {
+    color: #0f172a !important;
+}
+
+html:not(.dark) .exercise-stat-sub {
+    color: #64748b !important;
+}
+
+html:not(.dark) .exercise-card {
+    background-color: #ffffff !important;
+    border-color: #e2e8f0 !important;
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.05) !important;
+}
+
+html:not(.dark) .exercise-q-number {
+    background-color: #eff6ff !important;
+    color: #2563eb !important;
+    border-color: #bfdbfe !important;
+}
+
+html:not(.dark) .exercise-q-title {
+    color: #0f172a !important;
+}
+
+/* Quiz Option Buttons (Light Mode) */
+html:not(.dark) .quiz-opt-unanswered {
+    background-color: #ffffff !important;
+    border-color: #cbd5e1 !important;
+    color: #0f172a !important;
+}
+
+html:not(.dark) .quiz-opt-unanswered:hover {
+    background-color: #f1f5f9 !important;
+    border-color: #94a3b8 !important;
+}
+
+html:not(.dark) .badge-unanswered {
+    background-color: #e2e8f0 !important;
+    color: #334155 !important;
+}
+
+html:not(.dark) .quiz-opt-correct {
+    background-color: #ecfdf5 !important;
+    border-color: #10b981 !important;
+    color: #065f46 !important;
+}
+
+html:not(.dark) .badge-correct {
+    background-color: #10b981 !important;
+    color: #ffffff !important;
+}
+
+html:not(.dark) .quiz-opt-wrong {
+    background-color: #fff1f2 !important;
+    border-color: #f43f5e !important;
+    color: #9f1239 !important;
+}
+
+html:not(.dark) .badge-wrong {
+    background-color: #f43f5e !important;
+    color: #ffffff !important;
+}
+
+html:not(.dark) .quiz-opt-dimmed {
+    background-color: #f8fafc !important;
+    border-color: #e2e8f0 !important;
+    color: #94a3b8 !important;
+    opacity: 0.65 !important;
+}
+
+html:not(.dark) .badge-dimmed {
+    background-color: #f1f5f9 !important;
+    color: #94a3b8 !important;
+}
+
+/* Feedback Boxes (Light Mode) */
+html:not(.dark) .exercise-feedback-correct {
+    background-color: #ecfdf5 !important;
+    border-color: #a7f3d0 !important;
+    color: #065f46 !important;
+}
+
+html:not(.dark) .exercise-feedback-incorrect {
+    background-color: #fffbeb !important;
+    border-color: #fde68a !important;
+    color: #92400e !important;
+}
+
+/* Practical (Light Mode) */
+html:not(.dark) .exercise-practical-badge {
+    background-color: #d1fae5 !important;
+    border-color: #a7f3d0 !important;
+    color: #059669 !important;
+}
+
+html:not(.dark) .exercise-practical-title {
+    color: #0f172a !important;
+}
+
+html:not(.dark) .exercise-practical-desc {
+    color: #334155 !important;
+}
+
+html:not(.dark) .exercise-checklist-box {
+    background-color: #f8fafc !important;
+    border-color: #e2e8f0 !important;
+    color: #0f172a !important;
+}
+
+html:not(.dark) .exercise-solution-box {
+    background-color: #ecfdf5 !important;
+    border-color: #a7f3d0 !important;
+    color: #065f46 !important;
+}

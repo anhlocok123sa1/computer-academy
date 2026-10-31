@@ -1,0 +1,15 @@
+1
+00:00:00,000 --> 00:00:08,000
+Bạn có biết mọi thao tác trên PC từ gõ văn bản đến dựng phim 4K đều tuân theo chu trình xử lý dữ liệu chuẩn quốc tế gọi là IPOS?
+
+2
+00:00:08,000 --> 00:00:25,000
+Hãy tưởng tượng PC như một nhà bếp: Input là người mang nguyên liệu vào; Process CPU là đầu bếp chính; RAM là mặt bàn bếp chế biến dở; Storage SSD HDD là tủ đông lưu lâu dài; và Output Màn hình là đĩa thức ăn thành phẩm!
+
+3
+00:00:25,000 --> 00:00:50,000
+Dựa vào kiểu dáng, PC được chia làm 4 loại: Desktop PC cồng kềnh nhưng hiệu năng cực mạnh, dễ nâng cấp; Laptop di động linh hoạt; All-in-One đẹp gọn tích hợp sau màn hình; và Mini PC siêu nhỏ tiết kiệm diện tích.
+
+4
+00:00:50,000 --> 00:01:00,000
+Mẹo KTV: Nếu làm đồ họa hoặc chơi game, hãy ưu tiên chọn Desktop PC để tối ưu hiệu năng trên chi phí nhé!
